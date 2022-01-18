@@ -15,12 +15,13 @@ func (stu *Student) Add(new *Student) {
 	temp := stu
 	for {
 		if temp.next == nil {
-			break  //已找到最后
+			break //已找到最后
 		}
-		temp = temp.next//
+		temp = temp.next //
 	}
 	temp.next = new
 }
+
 //按从小到大添加
 func (stu *Student) Xadd(new *Student) {
 	temp := stu
@@ -43,6 +44,7 @@ func (stu *Student) Xadd(new *Student) {
 		fmt.Println("有相同的数据")
 	}
 }
+
 //删除一个元素
 func (stu *Student) Delect(id int) {
 	temp := stu
@@ -63,6 +65,7 @@ func (stu *Student) Delect(id int) {
 		fmt.Println("没有数据")
 	}
 }
+
 //显示
 func (stu *Student) Show() {
 	temp := stu
